@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
         // task #1
         System.out.println();
-        int capital = 0;
+        float capital = 0;
         int month = 0;
         while (capital <= 2459000)
         {
-            capital += 15000;
+            capital = (capital + 15000) * 1.01f;
             month++;
             System.out.println("Месяц " + month + ", сумма накоплений равна " + capital +" рублей");
         }
@@ -78,12 +78,14 @@ public class Main {
 
         // task #7
         System.out.println();
-        int firstFriday = 4;
+        int firstFriday = 1;
         int days = 31;
-        while (firstFriday < days)
+        counter = 0;
+        while (firstFriday <= days & counter < 5)
         {
             System.out.println("Сегодня пятница, " + firstFriday + "-е число. Необходимо подготовить отчет");
             firstFriday+=7;
+            counter++;
         }
 
         // task #8
